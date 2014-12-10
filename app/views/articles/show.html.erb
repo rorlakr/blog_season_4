@@ -1,3 +1,9 @@
+<% if flash.present? %>
+<div id='flash_message'>
+  <%= flash[:notice] %>
+</div>
+<% end %>
+
 <p>
   <strong>Title</strong> : <%= @article.title %>
 </p>
